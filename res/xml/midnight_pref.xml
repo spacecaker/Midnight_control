@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="mgen"
+        android:title="Midnight General">
+       
+    	<Preference android:icon="@drawable/ic_db" android:title="Dolby Mobile">        
+    	    <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$AcerDolby" />    	
+    	</Preference>
+    	   
+    	<Preference android:icon="@drawable/ic_pws" android:title="Power Saving">        
+    	    <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$AutoSettingActivity" />    	
+    	</Preference>
+    	    		    		    	
+    	<Preference android:icon="@drawable/ic_pgen" android:title="Build Prop Editor">        
+    	    <intent android:targetPackage="com.midnight.midnightcontrol" android:action="android.intent.action.MAIN" android:targetClass="com.midnight.midnightcontrol.Propper.BuildPropEditor" />    	
+    	</Preference>
+   		    	
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="mstat"
+        android:title="Midnight Statusbar">
+       
+    	<Preference android:icon="@drawable/ic_pclock" android:title="Statusbar Clock">        
+    	    <intent android:targetPackage="com.potato.clock.main" android:action="android.intent.action.MAIN" android:targetClass="com.potato.clock.main.Main" />    	
+    	</Preference>
+
+    	<Preference android:icon="@drawable/ic_pgest" android:title="Statusbar Gesture">        
+    	    <intent android:targetPackage="com.potato.mariozawa.settings" android:action="android.intent.action.MAIN" android:targetClass="com.potato.mariozawa.settings.Main" />    	
+    	</Preference>
+
+    	<Preference android:icon="@drawable/ic_pbattery" android:title="Battery">        
+    	    <intent android:targetPackage="com.ghareeb.battery" android:action="android.intent.action.MAIN" android:targetClass="com.ghareeb.battery.Settings" />    	
+    	</Preference> 
+    	    	
+    	<Preference android:icon="@drawable/ic_mtoggles" android:title="Toggles">        
+    	    <intent android:targetPackage="com.lidroid.settings" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.settings.Settings" />    	
+    	</Preference>    		    	
+    </PreferenceCategory>
+</PreferenceScreen>

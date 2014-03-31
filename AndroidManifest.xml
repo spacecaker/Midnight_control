@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.midnight.midnightcontrol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.midnight.midnightcontrol.Midnightrom"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.midnight.midnightcontrol.Propper.BuildPropEditor"
+            	  android:label="@string/app_name"
+            	  android:theme="@android:style/Theme.DeviceDefault"
+                  />                      
+        <activity android:name="com.midnight.midnightcontrol.Propper.EditPropActivity"
+                  android:label="@string/edit_prop_title"
+                  android:theme="@style/AppTheme"
+                  />        
+    </application>
+
+</manifest>
